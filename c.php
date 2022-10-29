@@ -106,8 +106,11 @@ $apple = new Information(
 "root",
 "root",
 "info_all_array");
-$apple->set_sql('SELECT * FROM `info_all_array` WHERE 1') ;
+// Etape n°1 Donner le nom de la BD et la table //
 
+
+$apple->set_sql('SELECT * FROM `info_all_array` WHERE 1') ;
+// Etape n°2 recherche spetifique dans la BDD 
 
  /*
 "get_club_departement_array_2",
@@ -132,6 +135,8 @@ $apple->set_row("get_result_users_perf_array_2");
 $apple->set_row("get_result_users_nom_1_array_2"); 
 
 $apple->set_row("get_result_users_nom_4_array_2"); 
+
+// Etape n°3 Element a recherche lorsquil parcour la bdd
 /*
 $apple->set_row("get_result_users_nom_3_array_2"); 
 $apple->set_row("get_result_users_nom_4_array_2"); 
@@ -144,6 +149,8 @@ $apple->set_row("get_club_departement_array_2");
 
 
 $apple->execution(); 
+
+// Et pour finir execution du programme
  
 ?>
 
